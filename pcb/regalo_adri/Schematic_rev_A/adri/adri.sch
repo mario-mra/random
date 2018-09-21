@@ -1,0 +1,378 @@
+EESchema Schematic File Version 4
+LIBS:adri-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny13V-10SSU U1
+U 1 1 5BA16DB0
+P 4550 3650
+F 0 "U1" H 4020 3696 50  0000 R CNN
+F 1 "ATtiny13V-10SSU" H 4020 3605 50  0000 R CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4550 3650 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2535.pdf" H 4550 3650 50  0001 C CNN
+	1    4550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5BA16E6F
+P 1050 3450
+F 0 "#PWR02" H 1050 3200 50  0001 C CNN
+F 1 "GND" H 1055 3277 50  0000 C CNN
+F 2 "" H 1050 3450 50  0001 C CNN
+F 3 "" H 1050 3450 50  0001 C CNN
+	1    1050 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4250 4550 4350
+$Comp
+L power:+BATT #PWR03
+U 1 1 5BA1709F
+P 4550 2950
+F 0 "#PWR03" H 4550 2800 50  0001 C CNN
+F 1 "+BATT" H 4565 3123 50  0000 C CNN
+F 2 "" H 4550 2950 50  0001 C CNN
+F 3 "" H 4550 2950 50  0001 C CNN
+	1    4550 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2950 4550 3000
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5BA1717B
+P 5450 4150
+F 0 "SW1" H 5450 4435 50  0000 C CNN
+F 1 "SW_Push" H 5450 4344 50  0000 C CNN
+F 2 "footprint:SW_ali_4x4x0.8" H 5450 4350 50  0001 C CNN
+F 3 "" H 5450 4350 50  0001 C CNN
+	1    5450 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 3850 5200 3850
+Wire Wire Line
+	5450 3850 5450 3950
+Wire Wire Line
+	5450 4350 4900 4350
+$Comp
+L Device:R R1
+U 1 1 5BA172AF
+P 5600 3350
+F 0 "R1" V 5393 3350 50  0000 C CNN
+F 1 "R" V 5484 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5530 3350 50  0001 C CNN
+F 3 "~" H 5600 3350 50  0001 C CNN
+	1    5600 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Buzzer BZ1
+U 1 1 5BA1737D
+P 8100 3450
+F 0 "BZ1" H 8253 3479 50  0000 L CNN
+F 1 "Buzzer" H 8253 3388 50  0000 L CNN
+F 2 "Buzzers_Beepers:MagneticBuzzer_ProSignal_ABT-410-RC" V 8075 3550 50  0001 C CNN
+F 3 "~" V 8075 3550 50  0001 C CNN
+	1    8100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L batteries:Batt_cr2032 Batt1
+U 1 1 5BA17DE2
+P 1050 3150
+F 0 "Batt1" H 1328 3571 50  0000 L CNN
+F 1 "Batt_cr2032" H 1328 3480 50  0000 L CNN
+F 2 "footprint:Batt_cr2032_SMD" H 1050 3150 50  0001 C CNN
+F 3 "" H 1050 3150 50  0001 C CNN
+	1    1050 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3300 1050 3450
+$Comp
+L Connector:AVR-ISP-6 J1
+U 1 1 5BA18290
+P 2400 3750
+F 0 "J1" H 2120 3846 50  0000 R CNN
+F 1 "AVR-ISP-6" H 2120 3755 50  0000 R CNN
+F 2 "footprints_internet:AVR-ISP-6-TH" V 2150 3800 50  0001 C CNN
+F 3 " ~" H 1125 3200 50  0001 C CNN
+	1    2400 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3250 2300 3000
+Wire Wire Line
+	2300 3000 4550 3000
+Connection ~ 4550 3000
+Wire Wire Line
+	4550 3000 4550 3050
+Wire Wire Line
+	2300 4150 2300 4350
+Wire Wire Line
+	2300 4350 4550 4350
+Connection ~ 4550 4350
+Wire Wire Line
+	2800 3550 2900 3550
+Wire Wire Line
+	2900 3550 2900 2450
+Wire Wire Line
+	2900 2450 5200 2450
+Wire Wire Line
+	5200 2450 5200 3450
+Wire Wire Line
+	5200 3450 5150 3450
+Wire Wire Line
+	2800 3650 2950 3650
+Wire Wire Line
+	2950 3650 2950 2500
+Wire Wire Line
+	2950 2500 5150 2500
+Wire Wire Line
+	5150 2500 5150 3350
+Connection ~ 5150 3350
+Wire Wire Line
+	2800 3750 3000 3750
+Wire Wire Line
+	3000 3750 3000 2550
+Wire Wire Line
+	3000 2550 5250 2550
+Wire Wire Line
+	5250 2550 5250 3550
+Wire Wire Line
+	5250 3550 5150 3550
+Wire Wire Line
+	2800 3850 3050 3850
+Wire Wire Line
+	3050 3850 3050 2600
+Wire Wire Line
+	3050 2600 5300 2600
+Wire Wire Line
+	5300 2600 5300 3850
+Connection ~ 5300 3850
+Wire Wire Line
+	5300 3850 5450 3850
+$Comp
+L power:+BATT #PWR01
+U 1 1 5BA198AF
+P 1050 2150
+F 0 "#PWR01" H 1050 2000 50  0001 C CNN
+F 1 "+BATT" H 1065 2323 50  0000 C CNN
+F 2 "" H 1050 2150 50  0001 C CNN
+F 3 "" H 1050 2150 50  0001 C CNN
+	1    1050 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2150 1050 2250
+$Comp
+L power:GND #PWR04
+U 1 1 5BA1A4F6
+P 4550 4450
+F 0 "#PWR04" H 4550 4200 50  0001 C CNN
+F 1 "GND" H 4555 4277 50  0000 C CNN
+F 2 "" H 4550 4450 50  0001 C CNN
+F 3 "" H 4550 4450 50  0001 C CNN
+	1    4550 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4350 4550 4450
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5BA1BD0C
+P 5850 4150
+F 0 "SW2" H 5850 4435 50  0000 C CNN
+F 1 "SW_Push" H 5850 4344 50  0000 C CNN
+F 2 "footprint:SW_ali_4x4x0.8" H 5850 4350 50  0001 C CNN
+F 3 "" H 5850 4350 50  0001 C CNN
+	1    5850 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5BA1C29C
+P 6250 4150
+F 0 "SW3" H 6250 4435 50  0000 C CNN
+F 1 "SW_Push" H 6250 4344 50  0000 C CNN
+F 2 "footprint:SW_ali_4x4x0.8" H 6250 4350 50  0001 C CNN
+F 3 "" H 6250 4350 50  0001 C CNN
+	1    6250 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5450 4350 5850 4350
+Connection ~ 5450 4350
+Wire Wire Line
+	5850 4350 6250 4350
+Connection ~ 5850 4350
+Wire Wire Line
+	5150 3750 5600 3750
+Wire Wire Line
+	5850 3750 5850 3950
+Wire Wire Line
+	5150 3650 6000 3650
+Wire Wire Line
+	6250 3650 6250 3950
+$Comp
+L LED:WS2812B D1
+U 1 1 5BA1E9E9
+P 7600 4050
+F 0 "D1" H 7941 4096 50  0000 L CNN
+F 1 "WS2812B" H 7941 4005 50  0000 L CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 7650 3750 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7700 3675 50  0001 L TNN
+	1    7600 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3550 5850 3550
+Wire Wire Line
+	7200 3550 7200 4050
+Wire Wire Line
+	7200 4050 7300 4050
+Connection ~ 5250 3550
+Wire Wire Line
+	5150 3350 5350 3350
+Wire Wire Line
+	8000 3550 8000 4350
+Wire Wire Line
+	8000 4350 7600 4350
+Connection ~ 7600 4350
+NoConn ~ 7900 4050
+$Comp
+L power:+BATT #PWR06
+U 1 1 5BA23D05
+P 7600 3750
+F 0 "#PWR06" H 7600 3600 50  0001 C CNN
+F 1 "+BATT" H 7615 3923 50  0000 C CNN
+F 2 "" H 7600 3750 50  0001 C CNN
+F 3 "" H 7600 3750 50  0001 C CNN
+	1    7600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J2
+U 1 1 5BA246B2
+P 5100 4800
+F 0 "J2" H 5127 4776 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 5127 4685 50  0000 L CNN
+F 2 "footprint:4_pin_conn_SMD" H 5100 4800 50  0001 C CNN
+F 3 "~" H 5100 4800 50  0001 C CNN
+	1    5100 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 4600 4900 4350
+Connection ~ 4900 4350
+Wire Wire Line
+	4900 4350 4550 4350
+Wire Wire Line
+	5200 4600 5200 3850
+Connection ~ 5200 3850
+Wire Wire Line
+	5200 3850 5300 3850
+Wire Wire Line
+	5100 4600 5100 4550
+Wire Wire Line
+	5100 4550 6000 4550
+Wire Wire Line
+	6000 4550 6000 3650
+Connection ~ 6000 3650
+Wire Wire Line
+	6000 3650 6250 3650
+Wire Wire Line
+	5000 4600 5000 4500
+Wire Wire Line
+	5000 4500 5600 4500
+Wire Wire Line
+	5600 4500 5600 3750
+Connection ~ 5600 3750
+Wire Wire Line
+	5600 3750 5850 3750
+$Comp
+L Connector:Conn_01x04_Female J3
+U 1 1 5BA2979F
+P 6200 3050
+F 0 "J3" H 6227 3026 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 6227 2935 50  0000 L CNN
+F 2 "footprint:4_pin_conn_SMD" H 6200 3050 50  0001 C CNN
+F 3 "~" H 6200 3050 50  0001 C CNN
+	1    6200 3050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6000 3050 5900 3050
+Wire Wire Line
+	5900 3050 5900 3450
+Wire Wire Line
+	5900 3450 5200 3450
+Connection ~ 5200 3450
+Wire Wire Line
+	6000 2950 5850 2950
+Wire Wire Line
+	5850 2950 5850 3550
+$Comp
+L power:+BATT #PWR05
+U 1 1 5BA31E78
+P 5900 2800
+F 0 "#PWR05" H 5900 2650 50  0001 C CNN
+F 1 "+BATT" H 5915 2973 50  0000 C CNN
+F 2 "" H 5900 2800 50  0001 C CNN
+F 3 "" H 5900 2800 50  0001 C CNN
+	1    5900 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2850 5900 2850
+Wire Wire Line
+	5900 2850 5900 2800
+Wire Wire Line
+	5350 3150 5350 3350
+Wire Wire Line
+	5350 3150 6000 3150
+Connection ~ 5350 3350
+Wire Wire Line
+	5350 3350 5450 3350
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5BA39949
+P 6700 4150
+F 0 "SW4" H 6700 4435 50  0000 C CNN
+F 1 "SW_Push" H 6700 4344 50  0000 C CNN
+F 2 "footprint:SW_ali_4x4x0.8" H 6700 4350 50  0001 C CNN
+F 3 "" H 6700 4350 50  0001 C CNN
+	1    6700 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 3450 5900 3450
+Connection ~ 5900 3450
+Wire Wire Line
+	6700 3450 6700 3950
+Wire Wire Line
+	7200 3550 5850 3550
+Connection ~ 5850 3550
+Wire Wire Line
+	5750 3350 8000 3350
+Wire Wire Line
+	6250 4350 6700 4350
+Connection ~ 6250 4350
+Wire Wire Line
+	6700 4350 7600 4350
+Connection ~ 6700 4350
+$EndSCHEMATC
