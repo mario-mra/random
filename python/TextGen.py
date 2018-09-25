@@ -5,7 +5,7 @@ import random
 def rand_array(min_num, max_num, size):
     return [random.randint(min_num, max_num) for _ in range(size)]
 
-def make_svg_texts(text, sep=' ', out_dir='./text_out', rand_rotate=[0, 0], font='Z003'):
+def make_svg_texts(text, sep=' ', out_dir='./text_out', rand_rotate=[0, 0]):
     ctrl = 0
     while(os.path.exists(out_dir+str(ctrl))):
         ctrl += 1
