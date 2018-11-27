@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Name=Firefox Developer Edition [Light]
+GenericName=Web Browser
+GenericName[es]=Navegador web
+Comment=Browse the Web
+Comment[es]=Navegue por la web
+Exec=bash -c 'env GTK_THEME=Arc firefox-developer-edition %u'
+Icon=firefox-developer-edition
+Terminal=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handl$
+StartupNotify=true
+StartupWMClass=Firefox Developer Edition
+Categories=Network;WebBrowser;
+Keywords=web;browser;internet;
