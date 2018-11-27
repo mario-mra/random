@@ -1,0 +1,3 @@
+# Netscape HTTP Cookie File
+
+ringzer0ctf.com	FALSE	/	FALSE	0	PHPSESSID	enf1hidphgl4n2hu9fik2sdq55
